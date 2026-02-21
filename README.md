@@ -2,8 +2,8 @@
 
 Install one package, activate yellowbricks by name, pass config per yellowbrick:
 
-  npm install -g generator-jhipster-yellowbricks
-
+  `npm install -g generator-jhipster-yellowbricks`
+```
   jhipster jdl app.jdl \
     --blueprints yellowbricks \
     --yellowbricks=\
@@ -15,3 +15,4 @@ Install one package, activate yellowbricks by name, pass config per yellowbrick:
     --yellowbricks-server-contextpath-config='{"contextPath":"/jh"}' \
     --yellowbricks-angular-contextpath-config='{"contextPath":"/jh"}' \
     --yellowbricks-client-contextpath-config='{"contextPath":"/jh"}'
+```
