@@ -1,6 +1,6 @@
 # generator-jhipster-yellowbricks
 
-[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) blueprint — a [JHipster](https://www.jhipster.tech/) blueprint that orchestrates all yellowbricks in a single `--blueprints` flag.
+[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) blueprint — a [JHipster](https://www.jhipster.tech/) blueprint that orchestrates all yellowbricks selected in `.yellowbricks.jsonc`.
 
 [![NPM version][npm-image]][npm-url]
 [![Generator][github-generator-image]][github-generator-url]
