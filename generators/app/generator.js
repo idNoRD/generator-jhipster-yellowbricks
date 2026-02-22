@@ -66,7 +66,9 @@ export default class extends BaseApplicationGenerator {
             await this.composeWith(resolved);
             this.log.info(`[yellowbricks] activated brick: ${pkgName}`);
           } catch {
-            this.log.error(`[yellowbricks] could not load brick "${pkgName}" — check it is installed and has a generators/${gen} entry point`);
+            this.log.error(
+              `[yellowbricks] could not load brick "${pkgName}" — check it is installed and has a generators/${gen} entry point`,
+            );
           }
         }
       },
