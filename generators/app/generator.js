@@ -7,13 +7,20 @@ import stripJsonComments from 'strip-json-comments';
 
 const require = createRequire(import.meta.url);
 
-const BRICK_MAP = {
-  'generator-jhipster-yellowbricks-angular-contextpath': { gen: 'angular' },
-  'generator-jhipster-yellowbricks-spring-boot-contextpath': { gen: 'spring-boot' },
-  'generator-jhipster-yellowbricks-client-contextpath': { gen: 'client' },
-  'generator-jhipster-yellowbricks-angular-relativepathresource': { gen: 'angular' },
-  'generator-jhipster-yellowbricks-client-relativepathresource': { gen: 'client' },
-};
+const KNOWN_BRICKS = new Set([
+  'generator-jhipster-yellowbricks-angular-contextpath',
+  'generator-jhipster-yellowbricks-spring-boot-contextpath',
+  'generator-jhipster-yellowbricks-client-contextpath',
+  'generator-jhipster-yellowbricks-angular-relativepathresource',
+  'generator-jhipster-yellowbricks-client-relativepathresource',
+]);
+
+const PREFIX = 'generator-jhipster-yellowbricks-';
+
+function getGen(pkgName) {
+  const withoutPrefix = pkgName.slice(PREFIX.length);
+  return withoutPrefix.slice(0, withoutPrefix.lastIndexOf('-'));
+}
 
 export default class extends BaseApplicationGenerator {
   constructor(args, opts, features) {
@@ -50,14 +57,17 @@ export default class extends BaseApplicationGenerator {
         const requested = useList.map(b => b.trim()).filter(Boolean);
 
         for (const pkgName of requested) {
-          const brick = BRICK_MAP[pkgName];
-          if (!brick) {
-            this.log.warn(`[yellowbricks] unknown brick "${pkgName}"`);
-            continue;
+          const gen = getGen(pkgName);
+          if (!KNOWN_BRICKS.has(pkgName)) {
+            this.log.info(`[yellowbricks] unofficial brick "${pkgName}", trying to run for generator=${gen}`);
           }
-          const resolved = require.resolve(`${pkgName}/generators/${brick.gen}`);
-          await this.composeWith(resolved);
-          this.log.info(`[yellowbricks] activated brick: ${pkgName}`);
+          try {
+            const resolved = require.resolve(`${pkgName}/generators/${gen}`);
+            await this.composeWith(resolved);
+            this.log.info(`[yellowbricks] activated brick: ${pkgName}`);
+          } catch {
+            this.log.error(`[yellowbricks] could not load brick "${pkgName}" — check it is installed and has a generators/${gen} entry point`);
+          }
         }
       },
     });
