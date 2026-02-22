@@ -1,7 +1,7 @@
 {
   "name": "generator-jhipster-yellowbricks",
   "version": "1.0.1",
-  "description": "Yellowbricks meta blueprint — orchestrates all yellowbricks in a single JHipster blueprint",
+  "description": "Yellowbricks main blueprint — orchestrates all yellowbricks in a single JHipster blueprint",
   "keywords": [
     "yeoman-generator",
     "jhipster-blueprint",
