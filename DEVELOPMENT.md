@@ -56,7 +56,7 @@ mkdir /tmp/test-app && cd /tmp/test-app
 cat > .yo-rc.json << 'EOF'
 {
   "generator-jhipster-yellowbricks": {
-    "bricks": "angular-contextpath,spring-boot-contextpath,client-contextpath,angular-relativepathresource,client-relativepathresource"
+    "use": ["angular-contextpath", "spring-boot-contextpath", "client-contextpath", "angular-relativepathresource", "client-relativepathresource"]
   },
   "generator-jhipster-yellowbricks-angular-contextpath": { "contextPath": "/jh/" },
   "generator-jhipster-yellowbricks-spring-boot-contextpath": { "contextPath": "/jh/" },

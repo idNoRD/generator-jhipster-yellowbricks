@@ -35,10 +35,7 @@ export default class extends BaseApplicationGenerator {
   get [BaseApplicationGenerator.COMPOSING]() {
     return this.asComposingTaskGroup({
       async composeBricks() {
-        const requested = (this.blueprintConfig.bricks ?? '')
-          .split(',')
-          .map(b => b.trim())
-          .filter(Boolean);
+        const requested = (this.blueprintConfig.use ?? []).map(b => b.trim()).filter(Boolean);
 
         for (const brickName of requested) {
           const brick = BRICK_MAP[brickName];
