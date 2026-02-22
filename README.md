@@ -1,21 +1,37 @@
 # generator-jhipster-yellowbricks
 
-[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) Blueprint Ecosystem - A [JHipster](https://www.jhipster.tech/) blueprint that groups other yellowbricks
+[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) Meta blueprint — a [JHipster](https://www.jhipster.tech/) blueprint that orchestrates all yellowbricks in a single `--blueprints` flag.
+
+[![NPM version][npm-image]][npm-url]
+[![Generator][github-generator-image]][github-generator-url]
+![GitHub Maintained](https://img.shields.io/maintenance/yes/2026)
 
 ## Concept
 
 ```
-  generator-jhipster-yellowbricks          ← "parent" package (aggregator + orchestrator)
+  generator-jhipster-yellowbricks          ← meta blueprint (aggregator + orchestrator)
   ├── generator-jhipster-yellowbricks-angular-contextpath
-  ├── generator-jhipster-yellowbricks-server-contextpath
-  └── generator-jhipster-yellowbricks-... etc.
+  ├── generator-jhipster-yellowbricks-spring-boot-contextpath
+  ├── generator-jhipster-yellowbricks-client-contextpath
+  ├── generator-jhipster-yellowbricks-angular-relativepathresource
+  └── generator-jhipster-yellowbricks-client-relativepathresource
 ```
 
-### Rules:
+### Rules
 
-- Every yellowbrick is a standalone jhipster blueprint with npm package and GitHub repo — usable without the "parent" generator-jhipster-yellowbricks
-- The "parent" generator-jhipster-yellowbricks package exists only to group them
+- Every yellowbrick is a standalone JHipster blueprint — usable without this meta package
+- This meta package exists only to group and activate them
 - Each brick has exactly one responsibility
+
+## Available bricks
+
+| Brick name                     | What it does                                                   |
+| ------------------------------ | -------------------------------------------------------------- |
+| `angular-contextpath`          | Sets `baseHref` in `angular.json`                              |
+| `spring-boot-contextpath`      | Sets `context-path` in `application.yml`                       |
+| `client-contextpath`           | Sets `<base href>` in `index.html` and `swagger-ui/index.html` |
+| `angular-relativepathresource` | Makes logo URL relative in `navbar.scss`                       |
+| `client-relativepathresource`  | Makes logo URL relative in `loading.css`                       |
 
 ## Prerequisites
 
@@ -30,14 +46,17 @@ npm install -g generator-jhipster-yellowbricks
 
 ## Usage
 
-Create a `.yo-rc.json` in your project directory with the desired context path:
+Create a `.yo-rc.json` in your project directory selecting which bricks to activate and configuring any that need it:
 
 ```json
 {
-  "generator-jhipster-yellowbricks-server-contextpath": {
-    "contextPath": "/jh/"
+  "generator-jhipster-yellowbricks": {
+    "bricks": "angular-contextpath,spring-boot-contextpath,client-contextpath,angular-relativepathresource,client-relativepathresource"
   },
   "generator-jhipster-yellowbricks-angular-contextpath": {
+    "contextPath": "/jh/"
+  },
+  "generator-jhipster-yellowbricks-spring-boot-contextpath": {
     "contextPath": "/jh/"
   },
   "generator-jhipster-yellowbricks-client-contextpath": {
@@ -46,7 +65,7 @@ Create a `.yo-rc.json` in your project directory with the desired context path:
 }
 ```
 
-Replace `/jh/` with your actual context path. The trailing slash is required.
+The `angular-relativepathresource` and `client-relativepathresource` bricks require no configuration.
 
 Then run JHipster with this blueprint:
 
@@ -55,99 +74,50 @@ Then run JHipster with this blueprint:
 jhipster --blueprints yellowbricks
 
 # With JDL
-jhipster import-jdl your-app.jdl --blueprints yellowbricks --yellowbricks=\
-        yellowbricks-server-contextpath,\
-        yellowbricks-angular-contextpath,\
-        yellowbricks-client-contextpath,\
-        yellowbricks-angular-relativepathresource,\
-        yellowbricks-client-relativepathresource
+jhipster import-jdl your-app.jdl --blueprints yellowbricks
 ```
 
-# How to create a new yellowbrick
+## How to create a new yellowbrick
 
-All yellowbricks start from `generator-jhipster-yellowbricks-` prefix followed by name of generator and a purpose suffix.  
-For example if we need a yellowbrick that changes the angular.json file we need to find a name of corresponding generator in generator-jhipster repository (https://github.com/search?q=repo%3Ajhipster%2Fgenerator-jhipster+angular.json.ejs&type=code)  
-As you can see `generators/angular/templates/angular.json.ejs` is located under `generators/angular` folder so the name of generator is `angular`.
-And for adding a context path to angular.json the name of yellowbrick would be `generator-jhipster-yellowbricks-` + `angular` + `-contextpath`. Like here https://github.com/idNoRD/generator-jhipster-yellowbricks-angular-contextpath
+All yellowbricks start from the `generator-jhipster-yellowbricks-` prefix followed by the generator name and a purpose suffix.
 
-- Yellowbricks that modify existing JHipster generators override them with sbsBlueprint: true
-  ```
-  mkdir generator-jhipster-yellowbricks-<generator>-<purpose>
-  cd generator-jhipster-yellowbricks-<generator>-<purpose>
-  jhipster generate-blueprint --sub-generators <generator> --all-priorities --defaults --skip-git
-  ┌───────────────────────────────────────────────┬────────┐
-  │                    Prompt                     │ Answer │
-  ├───────────────────────────────────────────────┼────────┤
-  │ Is server generator a side-by-side blueprint? │ Y      │
-  ├───────────────────────────────────────────────┼────────┤
-  │ Is server generator a cli command?            │ N      │
-  └───────────────────────────────────────────────┴────────┘
-  ```
-- Yellowbricks that add new files override the `app` generator with sbsBlueprint: true
+To find the generator name, search the JHipster source for the template file you want to modify: https://github.com/search?q=repo%3Ajhipster%2Fgenerator-jhipster&type=code
 
-  ```
-  jhipster generate-blueprint --sub-generators app --defaults --skip-git
+For example, `generators/angular/templates/angular.json.ejs` lives under `generators/angular` — so the generator name is `angular` and the brick would be `generator-jhipster-yellowbricks-angular-<purpose>`.
 
-  ┌────────────────────────────────────────────┬────────┐
-  │                   Prompt                   │ Answer │
-  ├────────────────────────────────────────────┼────────┤
-  │ Is app generator a side-by-side blueprint? │ Y      │
-  ├────────────────────────────────────────────┼────────┤
-  │ Is app generator a cli command?            │ N      │
-  └────────────────────────────────────────────┴────────┘
-  ```
+### Bricks that modify existing JHipster output
 
-> JHipster blueprint, yellowbricks blueprint for JHipster
-
-[![NPM version][npm-image]][npm-url]
-[![Generator][github-generator-image]][github-generator-url]
-[![Samples][github-samples-image]][github-samples-url]
-
-# Introduction
-
-This is a [JHipster](https://www.jhipster.tech/) blueprint, that is meant to be used in a JHipster application.
-
-# Prerequisites
-
-As this is a [JHipster](https://www.jhipster.tech/) blueprint, we expect you have JHipster basic knowledge:
-
-- [JHipster](https://www.jhipster.tech/)
-
-# Installation
-
-To install or update this blueprint:
+Override the specific sub-generator with `sbsBlueprint: true`:
 
 ```bash
-npm install -g generator-jhipster-yellowbricks
+mkdir generator-jhipster-yellowbricks-<generator>-<purpose>
+cd generator-jhipster-yellowbricks-<generator>-<purpose>
+jhipster generate-blueprint --sub-generators <generator> --all-priorities --defaults --skip-git
 ```
 
-# Usage
+Answer:
 
-To use this blueprint, run the below command
+| Prompt                                               | Answer |
+| ---------------------------------------------------- | ------ |
+| Is `<generator>` generator a side-by-side blueprint? | Y      |
+| Is `<generator>` generator a cli command?            | N      |
 
-````bash
-jhipster-yellowbricks
+### Bricks that add new files
 
-You can look for updated yellowbricks blueprint specific options by running
-
-```bash
-jhipster-yellowbricks app --help
-````
-
-And looking for `(blueprint option: yellowbricks)` like
-
-## Pre-release
-
-To use an unreleased version, install it using git.
+Override the `app` generator with `sbsBlueprint: true`:
 
 ```bash
-npm install -g jhipster/generator-jhipster-yellowbricks#main
-jhipster --blueprints yellowbricks --skip-jhipster-dependencies
+jhipster generate-blueprint --sub-generators app --defaults --skip-git
 ```
+
+Answer:
+
+| Prompt                                     | Answer |
+| ------------------------------------------ | ------ |
+| Is app generator a side-by-side blueprint? | Y      |
+| Is app generator a cli command?            | N      |
 
 [npm-image]: https://img.shields.io/npm/v/generator-jhipster-yellowbricks.svg
 [npm-url]: https://npmjs.org/package/generator-jhipster-yellowbricks
-[github-generator-image]: https://github.com/jhipster/generator-jhipster-yellowbricks/actions/workflows/generator.yml/badge.svg
-[github-generator-url]: https://github.com/jhipster/generator-jhipster-yellowbricks/actions/workflows/generator.yml
-[github-samples-image]: https://github.com/jhipster/generator-jhipster-yellowbricks/actions/workflows/samples.yml/badge.svg
-[github-samples-url]: https://github.com/jhipster/generator-jhipster-yellowbricks/actions/workflows/samples.yml
+[github-generator-image]: https://github.com/idNoRD/generator-jhipster-yellowbricks/actions/workflows/generator.yml/badge.svg
+[github-generator-url]: https://github.com/idNoRD/generator-jhipster-yellowbricks/actions/workflows/generator.yml

@@ -1,0 +1,1422 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SubGenerator app of yellowbricks JHipster blueprint > run > should succeed 1`] = `
+{
+  ".devcontainer/Dockerfile": {
+    "stateCleared": "modified",
+  },
+  ".devcontainer/devcontainer.json": {
+    "stateCleared": "modified",
+  },
+  ".editorconfig": {
+    "stateCleared": "modified",
+  },
+  ".gitattributes": {
+    "stateCleared": "modified",
+  },
+  ".gitignore": {
+    "stateCleared": "modified",
+  },
+  ".husky/pre-commit": {
+    "stateCleared": "modified",
+  },
+  ".lintstagedrc.cjs": {
+    "stateCleared": "modified",
+  },
+  ".mvn/jvm.config": {
+    "stateCleared": "modified",
+  },
+  ".mvn/wrapper/maven-wrapper.jar": {
+    "stateCleared": "modified",
+  },
+  ".mvn/wrapper/maven-wrapper.properties": {
+    "stateCleared": "modified",
+  },
+  ".prettierignore": {
+    "stateCleared": "modified",
+  },
+  ".prettierrc": {
+    "stateCleared": "modified",
+  },
+  ".yo-rc.json": {
+    "stateCleared": "modified",
+  },
+  "README.md": {
+    "stateCleared": "modified",
+  },
+  "angular.json": {
+    "stateCleared": "modified",
+  },
+  "build-plugins/define-esbuild.ts": {
+    "stateCleared": "modified",
+  },
+  "build-plugins/i18n-esbuild.ts": {
+    "stateCleared": "modified",
+  },
+  "build-plugins/package.json": {
+    "stateCleared": "modified",
+  },
+  "checkstyle.xml": {
+    "stateCleared": "modified",
+  },
+  "eslint.config.ts": {
+    "stateCleared": "modified",
+  },
+  "mvnw": {
+    "stateCleared": "modified",
+  },
+  "mvnw.cmd": {
+    "stateCleared": "modified",
+  },
+  "ngsw-config.json": {
+    "stateCleared": "modified",
+  },
+  "npmw": {
+    "stateCleared": "modified",
+  },
+  "npmw.cmd": {
+    "stateCleared": "modified",
+  },
+  "package.json": {
+    "stateCleared": "modified",
+  },
+  "pom.xml": {
+    "stateCleared": "modified",
+  },
+  "proxy.config.mjs": {
+    "stateCleared": "modified",
+  },
+  "sonar-project.properties": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/app.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/grafana/provisioning/dashboards/JVM.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/grafana/provisioning/dashboards/dashboard.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/grafana/provisioning/datasources/datasource.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/jhipster-control-center.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/jib/entrypoint.sh": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/monitoring.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/postgresql.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/prometheus/prometheus.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/services.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/docker/sonar.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/ApplicationWebXml.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/GeneratedByJHipster.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/JhipsterApp.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/aop/logging/LoggingAspect.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/aop/logging/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/ApplicationProperties.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/AsyncConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/CRLFLogConverter.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/CacheConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/CacheKeyGeneratorConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/Constants.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/DatabaseConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/DateTimeFormatConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/JacksonConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/JacksonHibernateConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/LiquibaseConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/LoggingAspectConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/LoggingConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/SecurityConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/SecurityJwtConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/StaticResourcesWebConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/WebConfigurer.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/config/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/domain/AbstractAuditingEntity.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/domain/Authority.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/domain/User.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/domain/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/management/SecurityMetersService.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/management/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/repository/AuthorityRepository.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/repository/UserRepository.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/repository/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/security/AuthoritiesConstants.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/security/DomainUserDetailsService.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/security/SecurityUtils.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/security/SpringSecurityAuditorAware.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/security/UserNotActivatedException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/security/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/EmailAlreadyUsedException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/InvalidPasswordException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/MailService.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/UserService.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/UsernameAlreadyUsedException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/dto/AdminUserDTO.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/dto/PasswordChangeDTO.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/dto/UserDTO.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/dto/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/mapper/UserMapper.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/mapper/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/service/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/filter/SpaWebFilter.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/filter/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/AccountResource.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/AuthenticateController.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/AuthorityResource.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/PublicUserResource.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/UserResource.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/BadRequestAlertException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/EmailAlreadyUsedException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/ErrorConstants.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/ExceptionTranslator.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/FieldErrorVM.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/InvalidPasswordException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/LoginAlreadyUsedException.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/errors/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/vm/KeyAndPasswordVM.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/vm/LoginVM.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/vm/ManagedUserVM.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/java/com/mycompany/myapp/web/rest/vm/package-info.java": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/banner.txt": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/application-dev.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/application-prod.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/application-tls.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/application.yml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/liquibase/changelog/00000000000000_initial_schema.xml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/liquibase/data/authority.csv": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/liquibase/data/user.csv": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/liquibase/data/user_authority.csv": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/liquibase/master.xml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/config/tls/keystore.p12": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/i18n/messages.properties": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/i18n/messages_en.properties": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/logback-spring.xml": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/templates/error.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/templates/mail/activationEmail.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/templates/mail/creationEmail.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/resources/templates/mail/passwordResetEmail.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/404.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/WEB-INF/web.xml": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/account.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/activate/activate.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/activate/activate.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/activate/activate.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/activate/activate.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/activate/activate.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/activate/activate.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/finish/password-reset-finish.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/finish/password-reset-finish.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/finish/password-reset-finish.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/finish/password-reset-finish.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/finish/password-reset-finish.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/finish/password-reset-finish.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/init/password-reset-init.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/init/password-reset-init.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/init/password-reset-init.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/init/password-reset-init.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/init/password-reset-init.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password-reset/init/password-reset-init.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password-strength-bar/password-strength-bar.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password-strength-bar/password-strength-bar.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password-strength-bar/password-strength-bar.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password-strength-bar/password-strength-bar.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/password/password.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/register/register.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/settings/settings.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/settings/settings.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/settings/settings.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/account/settings/settings.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/admin.routes.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/configuration/configuration.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/configuration/configuration.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/configuration/configuration.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/configuration/configuration.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/configuration/configuration.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/configuration/configuration.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/docs/docs.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/docs/docs.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/docs/docs.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/health.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/health.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/health.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/health.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/health.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/health.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/modal/health-modal.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/modal/health-modal.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/health/modal/health-modal.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/logs/log.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/logs/logs.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/logs/logs.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/logs/logs.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/logs/logs.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/logs/logs.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/jvm-memory/jvm-memory.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/jvm-memory/jvm-memory.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/jvm-threads/jvm-threads.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/jvm-threads/jvm-threads.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-cache/metrics-cache.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-cache/metrics-cache.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-datasource/metrics-datasource.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-datasource/metrics-datasource.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-endpoints-requests/metrics-endpoints-requests.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-endpoints-requests/metrics-endpoints-requests.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-garbagecollector/metrics-garbagecollector.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-garbagecollector/metrics-garbagecollector.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-modal-threads/metrics-modal-threads.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-modal-threads/metrics-modal-threads.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-modal-threads/metrics-modal-threads.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-request/metrics-request.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-request/metrics-request.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-system/metrics-system.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/blocks/metrics-system/metrics-system.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/metrics.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/metrics.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/metrics.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/metrics.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/metrics.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/metrics/metrics.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/delete/user-management-delete-dialog.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/delete/user-management-delete-dialog.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/delete/user-management-delete-dialog.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/detail/user-management-detail.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/detail/user-management-detail.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/detail/user-management-detail.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/list/user-management.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/list/user-management.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/list/user-management.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/service/user-management.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/service/user-management.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/update/user-management-update.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/update/user-management-update.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/update/user-management-update.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/user-management.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/admin/user-management/user-management.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/app-page-title-strategy.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/app.config.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/app.routes.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/app.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/datepicker-adapter.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/dayjs.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/font-awesome-icons.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/input.constants.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/language.constants.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/navigation.constants.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/pagination.constants.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/translation.config.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/config/uib-pagination.config.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/account.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/account.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/account.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/auth-jwt.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/auth-jwt.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/state-storage.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/auth/user-route-access.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/config/application-config.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/config/application-config.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/interceptor/auth-expired.interceptor.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/interceptor/auth.interceptor.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/interceptor/error-handler.interceptor.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/interceptor/notification.interceptor.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/request/request-util.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/request/request.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/alert.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/alert.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/data-util.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/data-util.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/event-manager.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/event-manager.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/operators.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/operators.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/parse-links.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/core/util/parse-links.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/authority.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/authority.routes.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/authority.test-samples.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/delete/authority-delete-dialog.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/delete/authority-delete-dialog.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/delete/authority-delete-dialog.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/detail/authority-detail.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/detail/authority-detail.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/detail/authority-detail.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/list/authority.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/list/authority.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/list/authority.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/route/authority-routing-resolve.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/route/authority-routing-resolve.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/service/authority.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/service/authority.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/update/authority-form.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/update/authority-form.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/update/authority-update.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/update/authority-update.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/admin/authority/update/authority-update.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/entity.routes.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/user/service/user.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/user/service/user.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/user/user.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/entities/user/user.test-samples.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/home/home.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/home/home.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/home/home.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/home/home.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/error/error.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/error/error.route.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/error/error.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/footer/footer.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/footer/footer.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/main/main.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/main/main.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/main/main.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/navbar/active-menu.directive.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/navbar/navbar-item.model.d.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/navbar/navbar.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/navbar/navbar.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/navbar/navbar.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/navbar/navbar.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/profiles/page-ribbon.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/profiles/page-ribbon.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/profiles/page-ribbon.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/profiles/profile-info.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/layouts/profiles/profile.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/login/login.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/login/login.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/login/login.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/login/login.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/login/login.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert-error.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert-error.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert-error.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert-error.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/alert/alert.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/auth/has-any-authority.directive.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/auth/has-any-authority.directive.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/date/duration.pipe.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/date/format-medium-date.pipe.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/date/format-medium-date.pipe.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/date/format-medium-datetime.pipe.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/date/format-medium-datetime.pipe.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/date/index.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/filter/filter.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/filter/filter.model.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/filter/filter.model.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/filter/filter.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/filter/index.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/jhipster/constants.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/jhipster/data-utils.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/jhipster/error.constants.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/jhipster/headers.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/jhipster/problem-details.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/language/find-language-from-key.pipe.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/language/index.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/language/translate.directive.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/language/translate.directive.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/language/translation.module.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/pagination/index.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/pagination/item-count.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/pagination/item-count.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/index.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort-by.directive.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort-by.directive.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort-state.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort.directive.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort.directive.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort.service.spec.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/app/shared/sort/sort.service.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/bootstrap.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/css/loading.css": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_0.svg": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_0_head-192.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_0_head-256.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_0_head-384.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_0_head-512.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_1.svg": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_1_head-192.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_1_head-256.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_1_head-384.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_1_head-512.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_2.svg": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_2_head-192.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_2_head-256.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_2_head-384.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_2_head-512.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_3.svg": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_3_head-192.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_3_head-256.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_3_head-384.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/jhipster_family_member_3_head-512.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/images/logo-jhipster.png": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/scss/_bootstrap-variables.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/scss/global.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/content/scss/vendor.scss": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/declarations.d.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/environments/environment.development.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/environments/environment.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/favicon.ico": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/activate.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/adminAuthority.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/configuration.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/error.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/global.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/health.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/home.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/login.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/logs.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/metrics.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/password.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/register.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/reset.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/sessions.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/settings.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/en/user-management.json": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/i18n/index.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/index.html": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/main.ts": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/manifest.webapp": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/robots.txt": {
+    "stateCleared": "modified",
+  },
+  "src/main/webapp/swagger-ui/index.html": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/IntegrationTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/TechnicalStructureTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/AsyncSyncConfiguration.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/CRLFLogConverterTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/DatabaseTestcontainer.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/SpringBootTestClassOrderer.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/StaticResourcesWebConfigurerTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/WebConfigurerTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/WebConfigurerTestController.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/config/timezone/HibernateTimeZoneIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/domain/AssertUtils.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/domain/AuthorityAsserts.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/domain/AuthorityTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/domain/AuthorityTestSamples.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/management/SecurityMetersServiceTests.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/repository/timezone/DateTimeWrapper.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/repository/timezone/DateTimeWrapperRepository.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/security/DomainUserDetailsServiceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/security/SecurityUtilsUnitTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/security/jwt/AuthenticationIntegrationTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/security/jwt/JwtAuthenticationTestUtils.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/security/jwt/TokenAuthenticationIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/security/jwt/TokenAuthenticationSecurityMetersIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/service/MailServiceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/service/UserServiceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/service/mapper/UserMapperTest.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/filter/SpaWebFilterIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/AccountResourceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/AuthenticateControllerIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/AuthorityResourceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/PublicUserResourceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/TestUtil.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/UserResourceIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/WithUnauthenticatedMockUser.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/errors/ExceptionTranslatorIT.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/java/com/mycompany/myapp/web/rest/errors/ExceptionTranslatorTestController.java": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/config/application-testdev.yml": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/config/application-testprod.yml": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/config/application.yml": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/i18n/messages_en.properties": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/junit-platform.properties": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/logback.xml": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/templates/mail/activationEmail.html": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/templates/mail/creationEmail.html": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/templates/mail/passwordResetEmail.html": {
+    "stateCleared": "modified",
+  },
+  "src/test/resources/templates/mail/testEmail.html": {
+    "stateCleared": "modified",
+  },
+  "tsconfig.app.json": {
+    "stateCleared": "modified",
+  },
+  "tsconfig.json": {
+    "stateCleared": "modified",
+  },
+  "tsconfig.spec.json": {
+    "stateCleared": "modified",
+  },
+  "vitest-base.config.ts": {
+    "stateCleared": "modified",
+  },
+}
+`;

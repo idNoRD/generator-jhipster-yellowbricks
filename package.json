@@ -1,24 +1,29 @@
 {
   "name": "generator-jhipster-yellowbricks",
+  "version": "1.0.0",
+  "description": "Yellowbricks meta blueprint — orchestrates all yellowbricks in a single JHipster blueprint",
   "keywords": [
     "yeoman-generator",
     "jhipster-blueprint",
-    "jhipster-8"
+    "jhipster-9",
+    "generator-jhipster-yellowbricks"
   ],
-  "bin": {
-    "jhipster-yellowbricks": "cli/cli.cjs"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idNoRD/generator-jhipster-yellowbricks.git"
   },
+  "license": "MIT",
+  "author": "idNoRD",
+  "type": "module",
   "files": [
-    "cli",
     "generators",
     "!**/__*",
     "!**/*.snap",
     "!**/*.spec.?(c|m)js"
   ],
   "scripts": {
-    "ejslint": "ejslint generators/**/*.ejs",
     "lint": "eslint .",
-    "lint-fix": "npm run ejslint && npm run lint -- --fix",
+    "lint-fix": "npm run lint -- --fix",
     "prepare": "husky",
     "prettier-check": "prettier --check \"{,**/}*.{md,json,yml,html,cjs,mjs,js,cts,mts,ts,tsx,css,scss,vue,java}\"",
     "prettier-format": "prettier --write \"{,**/}*.{md,json,yml,html,cjs,mjs,js,cts,mts,ts,tsx,css,scss,vue,java}\"",
@@ -28,21 +33,35 @@
     "vitest": "vitest"
   },
   "dependencies": {
-    "generator-jhipster": "9.0.0-beta.3"
+    "generator-jhipster-yellowbricks-angular-contextpath": "^1.0.0",
+    "generator-jhipster-yellowbricks-angular-relativepathresource": "^1.0.0",
+    "generator-jhipster-yellowbricks-client-contextpath": "^1.0.0",
+    "generator-jhipster-yellowbricks-client-relativepathresource": "^1.0.0",
+    "generator-jhipster-yellowbricks-spring-boot-contextpath": "^1.0.0"
   },
   "devDependencies": {
-    "ejs-lint": "2.0.1",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.4",
+    "@semantic-release/release-notes-generator": "^14.1.0",
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
+    "generator-jhipster": "9.0.0-beta.3",
     "globals": "17.3.0",
     "husky": "9.1.7",
     "jiti": "2.6.1",
     "lint-staged": "16.2.7",
     "prettier": "3.8.1",
     "prettier-plugin-packagejson": "3.0.0",
+    "semantic-release": "^25.0.3",
     "vitest": "4.0.18",
     "yeoman-test": ">=10"
+  },
+  "peerDependencies": {
+    "generator-jhipster": ">=9.0.0"
   },
   "engines": {
     "generator-jhipster": "9.0.0-beta.3",

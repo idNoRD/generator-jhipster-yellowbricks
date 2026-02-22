@@ -1,0 +1,37 @@
+name: Publish Package
+
+on:
+  workflow_run:
+    workflows: [Release]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  id-token: write # Required for OIDC
+  contents: read
+
+jobs:
+  publish:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm ci
+      - name: Publish if not already published
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          if npm view "generator-jhipster-yellowbricks@$VERSION" version &>/dev/null; then
+            echo "Version $VERSION already published, skipping"
+          else
+            npm publish
+          fi
+        env:
+          NODE_AUTH_TOKEN: ''
+          NPM_CONFIG_PROVENANCE: 'true'
