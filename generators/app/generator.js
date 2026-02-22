@@ -1,5 +1,5 @@
-import { createRequire } from 'node:module';
 import { readFile } from 'node:fs/promises';
+import { createRequire } from 'node:module';
 import { join } from 'node:path';
 
 import BaseApplicationGenerator from 'generator-jhipster/generators/base-application';
