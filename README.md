@@ -46,7 +46,10 @@ npm install -g generator-jhipster-yellowbricks
 
 ## Usage
 
-Create a `.yo-rc.json` in your project directory selecting which bricks to activate and configuring any that need it:
+Create a `.yo-rc.json` in your project directory selecting which bricks to activate and configuring any that need it.
+
+> [!TIP]
+> Only activate bricks that match your stack. If your JHipster app uses Vue or React instead of Angular, skip `angular-contextpath` and `angular-relativepathresource` — those bricks target Angular-specific files that won't exist in your project.
 
 ```json
 {
