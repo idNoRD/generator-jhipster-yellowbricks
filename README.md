@@ -1,6 +1,6 @@
 # generator-jhipster-yellowbricks
 
-[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) Meta blueprint — a [JHipster](https://www.jhipster.tech/) blueprint that orchestrates all yellowbricks in a single `--blueprints` flag.
+[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks) blueprint — a [JHipster](https://www.jhipster.tech/) blueprint that orchestrates all yellowbricks in a single `--blueprints` flag.
 
 [![NPM version][npm-image]][npm-url]
 [![Generator][github-generator-image]][github-generator-url]
@@ -9,7 +9,7 @@
 ## Concept
 
 ```
-  generator-jhipster-yellowbricks          ← meta blueprint (aggregator + orchestrator)
+  generator-jhipster-yellowbricks          ← (aggregator + orchestrator) blueprint
   ├── generator-jhipster-yellowbricks-angular-contextpath
   ├── generator-jhipster-yellowbricks-spring-boot-contextpath
   ├── generator-jhipster-yellowbricks-client-contextpath
@@ -23,15 +23,15 @@
 - This meta package exists only to group and activate them
 - Each brick has exactly one responsibility
 
-## Available bricks
+## Available yellowbricks
 
-| Brick name                     | What it does                                                   |
-| ------------------------------ | -------------------------------------------------------------- |
-| `angular-contextpath`          | Sets `baseHref` in `angular.json`                              |
-| `spring-boot-contextpath`      | Sets `context-path` in `application.yml`                       |
-| `client-contextpath`           | Sets `<base href>` in `index.html` and `swagger-ui/index.html` |
-| `angular-relativepathresource` | Makes logo URL relative in `navbar.scss`                       |
-| `client-relativepathresource`  | Makes logo URL relative in `loading.css`                       |
+| Yellowbrick name                                                                                                                                       | What it does                                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
+| [generator-jhipster-yellowbricks-angular-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-angular-contextpath)                   | Sets `baseHref` in `angular.json`                              |
+| [generator-jhipster-yellowbricks-spring-boot-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-spring-boot-contextpath)           | Sets `context-path` in `application.yml`                       |
+| [generator-jhipster-yellowbricks-client-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-client-contextpath)                     | Sets `<base href>` in `index.html` and `swagger-ui/index.html` |
+| [generator-jhipster-yellowbricks-angular-relativepathresource](https://github.com/idNoRD/generator-jhipster-yellowbricks-angular-relativepathresource) | Makes logo URL relative in `navbar.scss`                       |
+| [generator-jhipster-yellowbricks-client-relativepathresource](https://github.com/idNoRD/generator-jhipster-yellowbricks-client-relativepathresource)   | Makes logo URL relative in `loading.css`                       |
 
 ## Prerequisites
 
