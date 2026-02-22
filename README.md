@@ -1,6 +1,6 @@
 # generator-jhipster-yellowbricks
 
-Yellowbricks Blueprint Ecosystem - A [JHipster](https://www.jhipster.tech/) blueprint that groups other yellowbricks
+[![Yellow Bricks Badge](https://img.shields.io/badge/YELLOWBRICKS--yellow?style=for-the-badge&labelColor=black)](https://github.com/idNoRD/generator-jhipster-yellowbricks)  Blueprint Ecosystem - A [JHipster](https://www.jhipster.tech/) blueprint that groups other yellowbricks
 
 ## Concept
 ```
