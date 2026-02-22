@@ -46,31 +46,28 @@ npm install -g generator-jhipster-yellowbricks
 
 ## Usage
 
-Create a `.yo-rc.json` in your project directory selecting which bricks to use and configuring any that need it.
+Create a `.yellowbricks.jsonc` in your project directory. It supports comments, so you can easily toggle bricks and document your choices.
 
 > [!TIP]
 > Only activate bricks that match your stack. If your JHipster app uses Vue or React instead of Angular, skip `angular-contextpath` and `angular-relativepathresource` — those bricks target Angular-specific files that won't exist in your project.
 
-```json
+```jsonc
 {
-  "generator-jhipster-yellowbricks": {
-    "use": [
-      "angular-contextpath",
-      "spring-boot-contextpath",
-      "client-contextpath",
-      "angular-relativepathresource",
-      "client-relativepathresource"
-    ]
-  },
-  "generator-jhipster-yellowbricks-angular-contextpath": {
-    "contextPath": "/jh/"
-  },
-  "generator-jhipster-yellowbricks-spring-boot-contextpath": {
-    "contextPath": "/jh/"
-  },
-  "generator-jhipster-yellowbricks-client-contextpath": {
-    "contextPath": "/jh/"
-  }
+  // Order matters — bricks are activated in the order listed
+  "use": [
+    "generator-jhipster-yellowbricks-angular-contextpath",
+    "generator-jhipster-yellowbricks-spring-boot-contextpath",
+    "generator-jhipster-yellowbricks-client-contextpath",
+    "generator-jhipster-yellowbricks-angular-relativepathresource",
+    "generator-jhipster-yellowbricks-client-relativepathresource",
+    // "generator-jhipster-yellowbricks-vue-relativepathresource",  // uncomment vue but don't forget to comment -angular-
+  ],
+
+  // Configuration for bricks that need it:
+  // Keep contextPath the same across all context path bricks
+  "generator-jhipster-yellowbricks-angular-contextpath": { "contextPath": "/jh/" },
+  "generator-jhipster-yellowbricks-spring-boot-contextpath": { "contextPath": "/jh/" },
+  "generator-jhipster-yellowbricks-client-contextpath": { "contextPath": "/jh/" },
 }
 ```
 

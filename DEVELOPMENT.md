@@ -53,11 +53,20 @@ npm link generator-jhipster-yellowbricks-client-relativepathresource
 
 ```bash
 mkdir /tmp/test-app && cd /tmp/test-app
-cat > .yo-rc.json << 'EOF'
+cat > .yellowbricks.jsonc << 'EOF'
 {
-  "generator-jhipster-yellowbricks": {
-    "use": ["angular-contextpath", "spring-boot-contextpath", "client-contextpath", "angular-relativepathresource", "client-relativepathresource"]
-  },
+  // Order matters — bricks are activated in the order listed
+  "use": [
+    "generator-jhipster-yellowbricks-angular-contextpath",
+    "generator-jhipster-yellowbricks-spring-boot-contextpath",
+    "generator-jhipster-yellowbricks-client-contextpath",
+    "generator-jhipster-yellowbricks-angular-relativepathresource",
+    "generator-jhipster-yellowbricks-client-relativepathresource",
+    // "generator-jhipster-yellowbricks-vue-relativepathresource",  // uncomment vue but don't forget to comment -angular-
+  ],
+
+  // Configuration for bricks that need it:
+  // Keep contextPath the same across all context path bricks
   "generator-jhipster-yellowbricks-angular-contextpath": { "contextPath": "/jh/" },
   "generator-jhipster-yellowbricks-spring-boot-contextpath": { "contextPath": "/jh/" },
   "generator-jhipster-yellowbricks-client-contextpath": { "contextPath": "/jh/" }

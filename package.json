@@ -37,7 +37,8 @@
     "generator-jhipster-yellowbricks-angular-relativepathresource": "^1.0.0",
     "generator-jhipster-yellowbricks-client-contextpath": "^1.0.0",
     "generator-jhipster-yellowbricks-client-relativepathresource": "^1.0.0",
-    "generator-jhipster-yellowbricks-spring-boot-contextpath": "^1.0.0"
+    "generator-jhipster-yellowbricks-spring-boot-contextpath": "^1.0.0",
+    "strip-json-comments": "^5.0.3"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
