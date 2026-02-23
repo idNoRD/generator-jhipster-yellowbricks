@@ -35,10 +35,11 @@
 
 ## Waiting for your contribution
 
-| Yellowbrick name                                    | What it does                |
-| --------------------------------------------------- | --------------------------- |
-| generator-jhipster-yellowbricks-cypress-contextpath | Sets `baseHref` for cypress |
-| generator-jhipster-yellowbricks-vue-contextpath     | Sets `baseHref` for vue     |
+| Yellowbrick name                                                                                                                     | What it does                    |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------- |
+| generator-jhipster-yellowbricks-[cypress-contextpath](https://github.com/mshima/local-blueprints/blob/main/app/context-path.mjs#L96) | Sets `baseHref` for cypress     |
+| generator-jhipster-yellowbricks-vue-contextpath                                                                                      | Sets `baseHref` for vue         |
+| generator-jhipster-yellowbricks-vue-relativepathresource                                                                             | Makes logo URL relative for vue |
 
 ## Prerequisites
 
