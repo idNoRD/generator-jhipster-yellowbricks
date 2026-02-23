@@ -24,18 +24,28 @@ function getGen(pkgName) {
 
 export default class extends BaseApplicationGenerator {
   constructor(args, opts, features) {
+    const { version } = require('../../package.json');
+    console.log('');
+    console.log('========================================');
+    console.log(`   YellowBricks blueprint v${version}   `);
+    console.log('========================================');
+    console.log('');
     super(args, opts, { ...features, sbsBlueprint: true });
+
+    // JHipster v8's yeoman-environment doesn't implement getContextMap (added in v9).
+    // Polyfill it so the v9-based base generator can run inside a v8 environment.
+    if (!('getContextMap' in this.env)) {
+      const contextStore = new Map();
+      this.env.getContextMap = (key, factory = () => new Map()) => {
+        if (!contextStore.has(key)) contextStore.set(key, factory());
+        return contextStore.get(key);
+      };
+    }
   }
 
   get [BaseApplicationGenerator.COMPOSING]() {
     return this.asComposingTaskGroup({
       async composeBricks() {
-        console.log('');
-        console.log('========================================');
-        console.log('        YellowBricks blueprint          ');
-        console.log('========================================');
-        console.log('');
-
         let useList = this.blueprintConfig.use ?? [];
 
         const jsoncPath = join(this.destinationRoot(), '.yellowbricks.jsonc');
