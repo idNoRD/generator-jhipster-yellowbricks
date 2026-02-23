@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-yellowbricks",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Yellowbricks main blueprint — orchestrates all yellowbricks in a single JHipster blueprint",
   "keywords": [
     "yeoman-generator",
