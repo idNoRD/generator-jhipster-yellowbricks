@@ -27,11 +27,18 @@
 
 | Yellowbrick name                                                                                                                                       | What it does                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------- |
-| [generator-jhipster-yellowbricks-angular-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-angular-contextpath)                   | Sets `baseHref` in `angular.json`                              |
+| [generator-jhipster-yellowbricks-angular-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-angular-contextpath)                   | Sets `baseHref` in `angular.json` and `proxy.config.mjs`       |
 | [generator-jhipster-yellowbricks-spring-boot-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-spring-boot-contextpath)           | Sets `context-path` in `application.yml`                       |
 | [generator-jhipster-yellowbricks-client-contextpath](https://github.com/idNoRD/generator-jhipster-yellowbricks-client-contextpath)                     | Sets `<base href>` in `index.html` and `swagger-ui/index.html` |
 | [generator-jhipster-yellowbricks-angular-relativepathresource](https://github.com/idNoRD/generator-jhipster-yellowbricks-angular-relativepathresource) | Makes logo URL relative in `navbar.scss`                       |
 | [generator-jhipster-yellowbricks-client-relativepathresource](https://github.com/idNoRD/generator-jhipster-yellowbricks-client-relativepathresource)   | Makes logo URL relative in `loading.css`                       |
+
+## Waiting for your contribution
+
+| Yellowbrick name                                    | What it does                |
+| --------------------------------------------------- | --------------------------- |
+| generator-jhipster-yellowbricks-cypress-contextpath | Sets `baseHref` for cypress |
+| generator-jhipster-yellowbricks-vue-contextpath     | Sets `baseHref` for vue     |
 
 ## Prerequisites
 
