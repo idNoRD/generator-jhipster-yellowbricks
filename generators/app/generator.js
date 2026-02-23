@@ -7,6 +7,8 @@ import stripJsonComments from 'strip-json-comments';
 
 const require = createRequire(import.meta.url);
 
+const REQUIRED_JHIPSTER_VERSION = '9.0.0-beta.3';
+
 const KNOWN_BRICKS = new Set([
   'generator-jhipster-yellowbricks-angular-contextpath',
   'generator-jhipster-yellowbricks-spring-boot-contextpath',
@@ -27,19 +29,17 @@ export default class extends BaseApplicationGenerator {
     const { version } = require('../../package.json');
     console.log('');
     console.log('========================================');
-    console.log(`   YellowBricks blueprint v${version}   `);
+    console.log(`  YellowBricks blueprint v${version}`);
+    console.log(`  Requires JHipster ${REQUIRED_JHIPSTER_VERSION}+`);
     console.log('========================================');
     console.log('');
     super(args, opts, { ...features, sbsBlueprint: true });
 
-    // JHipster v8's yeoman-environment doesn't implement getContextMap (added in v9).
-    // Polyfill it so the v9-based base generator can run inside a v8 environment.
     if (!('getContextMap' in this.env)) {
-      const contextStore = new Map();
-      this.env.getContextMap = (key, factory = () => new Map()) => {
-        if (!contextStore.has(key)) contextStore.set(key, factory());
-        return contextStore.get(key);
-      };
+      throw new Error(
+        `JHipster ${REQUIRED_JHIPSTER_VERSION} or later is required.\n` +
+          `  Run: npm install -g generator-jhipster@${REQUIRED_JHIPSTER_VERSION}`,
+      );
     }
   }
 
