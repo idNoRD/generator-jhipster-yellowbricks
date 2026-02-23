@@ -30,14 +30,31 @@ export default class extends BaseApplicationGenerator {
   get [BaseApplicationGenerator.COMPOSING]() {
     return this.asComposingTaskGroup({
       async composeBricks() {
+        this.log.info('');
+        this.log.info('========================================');
+        this.log.info('        YellowBricks blueprint          ');
+        this.log.info('========================================');
+        this.log.info('');
+
         let useList = this.blueprintConfig.use ?? [];
 
+        const jsoncPath = join(this.destinationRoot(), '.yellowbricks.jsonc');
         try {
-          const raw = await readFile(join(this.destinationRoot(), '.yellowbricks.jsonc'), 'utf8');
-          const parsed = JSON.parse(stripJsonComments(raw));
+          const raw = await readFile(jsoncPath, 'utf8');
+          this.log.info('[yellowbricks] reading config from .yellowbricks.jsonc');
+
+          let parsed;
+          try {
+            // strip-json-comments removes // and /* */ but leaves trailing commas — strip those too
+            parsed = JSON.parse(stripJsonComments(raw).replace(/,(?=\s*[}\]])/g, ''));
+          } catch (e) {
+            this.log.error(`[yellowbricks] failed to parse .yellowbricks.jsonc: ${e.message}`);
+            parsed = {};
+          }
 
           if (Array.isArray(parsed.use)) {
             useList = parsed.use;
+            this.log.info(`[yellowbricks] found ${useList.length} brick(s) to activate`);
           }
 
           // Merge brick configs into .yo-rc.json so child generators can read them
@@ -50,8 +67,12 @@ export default class extends BaseApplicationGenerator {
           }
 
           this.fs.writeJSON(yorcPath, yorc);
-        } catch {
-          // file absent or unreadable — fall back to .yo-rc.json
+        } catch (e) {
+          if (e.code === 'ENOENT') {
+            this.log.info('[yellowbricks] no .yellowbricks.jsonc found, falling back to .yo-rc.json');
+          } else {
+            this.log.error(`[yellowbricks] error reading .yellowbricks.jsonc: ${e.message}`);
+          }
         }
 
         const requested = useList.map(b => b.trim()).filter(Boolean);
