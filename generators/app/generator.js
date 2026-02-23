@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
-import { dirname, join } from 'node:path';
+import { join } from 'node:path';
 
 import BaseApplicationGenerator from 'generator-jhipster/generators/base-application';
 import stripJsonComments from 'strip-json-comments';
@@ -84,10 +84,7 @@ export default class extends BaseApplicationGenerator {
           }
           try {
             const resolved = require.resolve(`${pkgName}/generators/${gen}`);
-            const packagePath = dirname(require.resolve(`${pkgName}/package.json`));
-            const namespace = `${pkgName}:${gen}`;
-            this.env.register(resolved, { namespace, packagePath });
-            await this.composeWith(namespace);
+            await this.composeWith(resolved);
             console.log(`[yellowbricks] activated brick: ${pkgName}`);
           } catch {
             console.error(
