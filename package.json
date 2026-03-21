@@ -50,7 +50,7 @@
     "eslint": "9.39.2",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.5",
-    "generator-jhipster": "9.0.0-beta.3",
+    "generator-jhipster": "9.0.0",
     "globals": "17.3.0",
     "husky": "9.1.7",
     "jiti": "2.6.1",
@@ -62,7 +62,7 @@
     "yeoman-test": ">=10"
   },
   "engines": {
-    "generator-jhipster": "9.0.0-beta.3",
+    "generator-jhipster": "9.0.0",
     "node": "^22.18.0 || >=24.11.0"
   }
 }

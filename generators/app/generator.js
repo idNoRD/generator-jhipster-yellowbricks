@@ -7,7 +7,7 @@ import stripJsonComments from 'strip-json-comments';
 
 const require = createRequire(import.meta.url);
 
-const REQUIRED_JHIPSTER_VERSION = '9.0.0-beta.3';
+const REQUIRED_JHIPSTER_VERSION = '9.0.0';
 
 const KNOWN_BRICKS = new Set([
   'generator-jhipster-yellowbricks-angular-contextpath',

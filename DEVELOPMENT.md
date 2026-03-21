@@ -3,7 +3,7 @@
 ## Prerequisites
 
 - Node.js `^22.18.0 || >=24.11.0`
-- JHipster 9 (`npm install -g generator-jhipster@9.0.0-beta.3`)
+- JHipster 9 (`npm install -g generator-jhipster@9.0.0`)
 
 ## Setup
 
