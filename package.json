@@ -33,11 +33,11 @@
     "vitest": "vitest"
   },
   "dependencies": {
-    "generator-jhipster-yellowbricks-angular-contextpath": "^1.0.0",
-    "generator-jhipster-yellowbricks-angular-relativepathresource": "^1.0.0",
-    "generator-jhipster-yellowbricks-client-contextpath": "^1.0.0",
-    "generator-jhipster-yellowbricks-client-relativepathresource": "^1.0.0",
-    "generator-jhipster-yellowbricks-spring-boot-contextpath": "^1.0.0",
+    "generator-jhipster-yellowbricks-angular-contextpath": "^2.0.1",
+    "generator-jhipster-yellowbricks-angular-relativepathresource": "^2.0.1",
+    "generator-jhipster-yellowbricks-client-contextpath": "^2.0.1",
+    "generator-jhipster-yellowbricks-client-relativepathresource": "^2.0.1",
+    "generator-jhipster-yellowbricks-spring-boot-contextpath": "^2.0.1",
     "strip-json-comments": "^5.0.3"
   },
   "devDependencies": {
